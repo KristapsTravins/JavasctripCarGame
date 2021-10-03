@@ -1,0 +1,74 @@
+body{
+    margin: 0 0 0 0;
+    overflow: hidden;
+    background-color: #666666;
+ }
+ h1{
+   position: fixed;
+   color:  #ffdd55;
+   left : 10%;
+   font-family: 'Gemunu Libre', sans-serif;
+ }
+ h2{
+  position: fixed;
+  color: darkred;
+  left: 35%;
+  top: 26%;
+  font-size: 111px;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+ .gameWindow{
+     display: flex;
+     margin: auto;
+     max-width: 700px;
+     background: url(img/background-1_0.png) 50% 187px / 699px repeat-y;
+     justify-content: center;
+     animation: slide 34s linear infinite ;/* lai kustetos paimaini sekundes  */
+ }
+ @keyframes slide {
+     from {
+         background-position: 0px -10000px;
+     }
+     to {
+         background-position: 0px 0px;
+     }
+   }
+ 
+  
+   #actionBox{
+
+     height: 100%;
+     width: 452px;
+     display: flex;
+   }
+   #mainCar{
+     background: transparent url(img/city_cars_2.png) no-repeat;
+     background-size: 266px;
+     background-position: -159px -8px;
+     height: 113px;
+     width: 56px;
+     position: relative;
+     top: 378px;
+     
+
+   }
+ 
+  .obsticleCar{
+     
+     position: absolute;
+     background: transparent url(img/city_cars_2.png) no-repeat;
+     background-size: 266px;
+     height: 113px;
+     width: 56px;
+   }
+   .obsticleBox{
+  
+    position: absolute;
+    width: 452px;
+   }
+
+
+
+   
+ 
+ 
